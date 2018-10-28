@@ -5,21 +5,23 @@
     <title>Que es un ETL?</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet">  
     <link href="Content/estiloEtl.css" rel="stylesheet">
+    <link href="Content/menu.css" rel="stylesheet">
   </head>
   <body>
     <!-- Menu-->
     <div class="containter_menu"> 
       <nav>
-        <div class="_logo"></div>
+        <div class="_logo">SQL Server Integration Services</div>
         <div class="_menu">
           <ul>
-            <li><a href="#">Que es un ETL?</a></li>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="etl.html">Fases de un ETL</a></li>
             <li><a href="#">Extraer datos de un sistema</a></li>
           </ul>
           <div class="_div_x">
-            <button type="button"><i class="icon-menu"></i></button><img src="assets/images/general/1_06.png" alt="" style="width: 35px; margin-right: 7px;"><a class="user" href="index.html"></a>
+            <button type="button"><i class="icon-menu"></i></button><img src="" alt="" style="width: 35px; margin-right: 7px;"><a class="user" href="index.html"></a>
           </div>
         </div>
       </nav>
@@ -30,7 +32,7 @@
       <div class="gradiente"></div>
       <div class="fondo_img" style="background:  #12a6cd 50% 50% / cover no-repeat;">
         <div class="box_master">
-          <h1>Que es un ETL?</h1>
+          <h1>Fases de un ETL</h1>
          
         </div>
       </div>     
@@ -41,18 +43,18 @@
 
     <div class="proceso_inscripcion_content">
       <div class="header_proceso_inscripcion_content">
-        <div class="contenido"><span>Informacón</span></div>
+        <div class="contenido"><span>Fases de un ETL</span></div>
       </div>
       <div class="div_flexbox">
         <div class="div_menu">
           <ul class="menu_tabs" role="tablist">
-            <li><a href="#info_general" aria-controls="info_general" role="tab" data-toggle="tab">Fase de Extracción</a></li>
-            <li><a href="#formacion_empleo" aria-controls="formacion_empleo" role="tab" data-toggle="tab">Fase de Extracción</a></li>
-            <li class="active"><a href="#info_basica_contacto" aria-controls="info_basica_contacto" role="tab" data-toggle="tab">Proceso de Carga</a></li>
+            <li id="Fase1" >Fase de Extracción</li>
+            <li  id="Fase2">Fase de Transformación</li>
+            <li id="Fase3">Proceso de Carga</li>
 
           </ul>
         </div>
-        <div class="div_contenido">
+        <div class="div_contenido"id="FaseExtraccion">
           <!--Informacion general-->
         <h5>Para llevar a cabo de manera correcta el proceso de extracción, primera fase del ETL, hay que
             seguir los siguientes pasos:</h4>
@@ -62,23 +64,49 @@
                 <li>Interpretar este chequeo para verificar que los datos extraídos cumplen la pauta o
                     estructura que se esperaba. Si no fuese así, los datos deberían ser rechazados.</li>
                 <li>Convertir los datos a un formato preparado para iniciar el proceso de transformación</li>
-            </ul>
-         
-         
-        
-          
-        
-          
+            </ul>                                                 
         </div>
+        <div class="div_contenido" id="FaseTransformacion">
+                <!--Informacion general-->
+              <h5>La fase de transformación de un proceso de ETL aplica una serie de reglas de negocio o funciones, sobre los datos extraídos para convertirlos en datos que serán cargados. Estas directrices pueden ser declarativas, pueden basarse en excepciones o restricciones pero, para potenciar su pragmatismo y eficacia, hay que asegurarse de que sean:</h4>
+                  <ul>
+                      <li>Declarativas</li>
+                      <li>Independientes</li>
+                      <li>Claras</li>
+                      <li>Inteligibles</li>
+                      <li>Con una finalidad útil para el negocio.</li>
+                  </ul>                                                 
+              </div>
+              <div class="div_contenido"id="ProcesoCarga">
+                    <!--Informacion general-->
+                  <h5>En esta fase, los datos procedentes de la fase anterior (fase de transformación) son cargados en el sistema de destino. Dependiendo de los requerimientos de la organización, este proceso puede abarcar una amplia variedad de acciones diferentes.</h4>
+                    <br>
+                    <h5>Existen dos formas básicas de desarrollar el proceso de carga:                        </h5> 
+                    <ul>
+                          <li><span> Acumulación simple:</span> esta manera de cargar los datos consiste en realizar un resumen de
+                                todas las transacciones comprendidas en el período de tiempo seleccionado y transportar
+                                el resultado como una única transacción hacia el data warehouse, almacenando un valor
+                                calculado que consistirá típicamente en un sumatorio o un promedio de la magnitud
+                                considerada. Es la forma más sencilla y común de llevar a cabo el proceso de carga.</li>
+                          <li> <span>Rolling:</span> este proceso sería el más recomendable en los casos en que se busque mantener
+                                varios niveles de granularidad. Para ello se almacena información resumida a distintos
+                                niveles, correspondientes a distintas agrupaciones de la unidad de tiempo o diferentes
+                                niveles jerárquicos en alguna o varias de las dimensiones de la magnitud almacenada (por
+                                ejemplo, totales diarios, totales semanales, totales mensuales, etc.).</li>
+                          <li>Interpretar este chequeo para verificar que los datos extraídos cumplen la pauta o
+                              estructura que se esperaba. Si no fuese así, los datos deberían ser rechazados.</li>
+                          <li>Convertir los datos a un formato preparado para iniciar el proceso de transformación</li>
+                      </ul>                                                 
+                  </div>
       </div>
     </div>
 
     <div class="dsfd"><span>Copyright&copy; 2018 Ricardo Lara Cod 80826577</span></div>
     <!-- Fin, seccion inferior-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="Content/bootstrap-theme.min.css"></script>
-    <script>
-    // <!-- Efecto al seleccionar una face-->
-    </script>
+  
+  
+         <script src="Scripts/EfectoProcesos.js"></script>
+ 
   </body>
 </html>
