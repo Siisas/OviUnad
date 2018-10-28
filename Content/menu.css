@@ -1,0 +1,164 @@
+﻿body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #fff;
+    color: #252726;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #252726;
+}
+
+#containerMenu {
+    border: solid #CCC 0px;
+    padding: 5px;
+    /*margin: 0 auto;*/
+    margin-top: 1%;
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 5px;
+    border: solid #666 0;
+    cursor: pointer;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+#gridbox {
+    width: 215px;
+    /*height: 355px;*/
+    background-color: #FFF;
+    border: solid 0.5px #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #CCC;
+    border: solid #CCC 1px;
+    font-size: 16px;
+    color: #666;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+}
+
+#innergrid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 20px 15px;
+    border-color: transparent transparent #efefef transparent;
+    display: none;
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+}
+
+#icons li {
+    text-align: center;
+    color: #100749;
+}
+
+.box {
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.boxContacto {
+    width: 250px;
+    height: 90px;
+    border: solid 2px #2b4367;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.phone {
+    font-size: 24PX;
+}
+
+.blueText {
+    color: #2b4367;
+}
+
+.whiteText {
+    color: #fff;
+    font-size: 20PX;
+}
+
+.blackText {
+    color: #000;
+    font-size: 18PX;
+}
+
+.blueLightText {
+    color: #08a2cb;
+    font-family: 'Anton', sans-serif;
+}
+
+.blueText2 {
+    color: #08a2cb;
+    font-size: 16px;
+}
+
+/*pack front*/
+.overview h4 {
+    font-weight: bold !important;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/*iconos gray region*/
+.icon-transport:before {
+    font-size: 100px;
+    content: "\e933";
+    color: #fff;
+    background-color: #08a2cb;
+    border-radius: 50px;
+}
+
+.icon-complaint:before {
+    font-size: 50px;
+    content: "\e95c";
+    color: #08a2cb;
+}
+
+.icon-chat:before {
+    font-size: 50px;
+    content: "\e95e";
+    color: #08a2cb;
+}
+
+.icon-heart:before {
+    font-size: 50px;
+    content: "\e95d";
+    color: #08a2cb;
+}
